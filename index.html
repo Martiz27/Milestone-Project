@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,16 +9,43 @@
   </head>
   <body>
     <div class="top-line">
-      <h1 id="score">Score: 0</h1>
-      <h1 id="round">Round: 1</h1>
+      <h1 id="score">Your Score: 0</h1>
+      <h1 id="round">Enemy Score: 1</h1>
+      <h1 id="game-timer">Game starts in:</h1>
+      <h2>00:00</h2>
+      <a href="./Homepage.html">
+        <button id="exit">Exit Game</button>
+      </a>
+    </div>
+    <div class="ai">
+      <img
+        id="question"
+        src="./Assets/Pictures/download.png"
+        alt="Question Box"
+      />
     </div>
     <div class="line">
-      <p>8 Seconds</p>
+      <h3>0:00</h3>
     </div>
     <div class="midl">
-      <img class="rps" src="./Assets/Pictures/Rock.jpg" />
-      <img class="rps" src="./Assets/Pictures/download.jpg" />
-      <img class="rps" src="./Assets/Pictures/paper_111691001.jpg" />
+      <button id="r">
+        <img class="rock" src="./Assets/Pictures/Rock.jpg" alt="Rock" />
+      </button>
+      <button id="s">
+        <img
+          class="scissor"
+          src="./Assets/Pictures/download.jpg"
+          alt="Scissor"
+        />
+      </button>
+      <button id="p">
+        <img
+          class="paper"
+          src="./Assets/Pictures/paper_111691001.jpg"
+          alt="Paper"
+        />
+      </button>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -4,14 +4,14 @@ body{
 
 h1{
     text-align: center;
-    font-size: 12em;
+    font-size: 3em;
     color: #393D3F;
     font-family: cursive;
 }
 
 img{
-    width: 200em;
-    border: 100px;
+    width: 50em;
+    border: 25px;
     border-style: double;
 }
 
@@ -23,22 +23,22 @@ img{
 }
 
 #play{
-    font-size: 15em;
+    font-size: 3.75em;
     margin-right: 1em;
     margin-top: 1em;
     padding-right: 1em;
     padding-left: 1em;
     background-color: #F5853F;
     font-family: cursive;
-    border: 20px;
+    border: 5px;
     border-style: outset;
 }
 #htp{
-    font-size: 15em;
+    font-size: 3.75em;
     margin-left: 1em;
     background-color: #F5853F;
     font-family: cursive;
-    border: 20px;
+    border: 5px;
     border-style: outset;
 }
 
@@ -52,7 +52,7 @@ img{
 
 ul{
     font-family: cursive;
-    font-size: 8em;
+    font-size: 2em;
     text-align: center;
     list-style: none;
 }
@@ -62,14 +62,14 @@ li{
 }
 p{
     font-family: cursive;
-    font-size: 8em;
+    font-size: 2em;
     text-align: center;
 }
 #go-back{
-    font-size: 12em;
+    font-size: 3em;
     background-color: #F5853F;
     font-family: cursive;
-    border: 20px;
+    border: 5px;
     border-style: outset;
     margin-top: 1em;
 }
@@ -92,19 +92,19 @@ p{
     transform: translate(-50%, -50%);
     background-color: #F5853F;
     opacity: .7;
-    max-height: 350px;
+    max-height: 87.5px;
 }
 
 .line > p{
-    font-size: 5em;
+    font-size: 1.25em;
 }
 
 #score{
-    font-size: 6em;
+    font-size: 1.5em;
     text-align: left;
 }
 #round{
-    font-size: 6em;
+    font-size: 1.5em;
     text-align: right;
 }
 
@@ -112,11 +112,86 @@ p{
     display: inline-block;
 }
 .rps{
-    width: 50em;
+    width: 12.5em;
     display: inline;
 }
 .midl{
     text-align: center;
-    margin-top: 125em;
-}
+    margin-top: 15em;
     
+}
+
+.rock{
+    width: 20em;
+    cursor: pointer;
+}
+
+.scissor{
+    width: 15.85em;
+    cursor: pointer;
+}
+
+.paper{
+    width: 20.75em;
+    cursor: pointer;
+}
+.paper:hover{
+    background-color: #F5853F;
+}
+
+.scissor:hover{
+    background-color: #F5853F;
+}
+
+.rock:hover{
+    background-color: #F5853F;
+}
+
+#question{
+    width: 10%;
+}
+
+.ai{
+    text-align: center;
+}
+
+#exit{
+    font-size: 1em;
+    background-color: #F5853F;
+    font-family: cursive;
+    border: 5px;
+    border-style: outset;
+}
+
+#exit:hover{
+    background-color: #393D3F;
+}
+
+span{
+    font-family: cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+h1{
+    font-family: cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2{
+    font-family: cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3{
+    font-family: cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+#game-timer{
+    font-size: 1.5em;
+    text-align: left;
+}
