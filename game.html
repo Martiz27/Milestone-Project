@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milestone Video Game</title>
+  </head>
+  <body>
+    <div class="top-line">
+      <h1 id="score">Your Score: 0</h1>
+      <h1 id="oppScore">Enemy Score: 0</h1>
+      <h1 id="game-timer">Game starts in:</h1>
+      <h2>00:00</h2>
+      <a href="./index.html">
+        <button id="exit">Exit Game</button>
+      </a>
+    </div>
+    <div class="ai">
+      <img
+        id="question"
+        src="./Assets/Pictures/question.png"
+        alt="Question Box"
+      />
+      <div>
+        <h2 id="game-text">Pick a Card</h2>
+      </div>
+    </div>
+    <div class="midl">
+      <button id="r">
+        <img class="rock" src="./Assets/Pictures/Rock.jpg" alt="Rock" />
+      </button>
+      <button id="s">
+        <img
+          class="scissor"
+          src="./Assets/Pictures/download.jpg"
+          alt="Scissor"
+        />
+      </button>
+      <button id="p">
+        <img
+          class="paper"
+          src="./Assets/Pictures/paper_111691001.jpg"
+          alt="Paper"
+        />
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

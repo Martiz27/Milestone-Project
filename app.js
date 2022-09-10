@@ -2,12 +2,35 @@ function game(){
     let yourScore = 0
     let oppScore = 0
 
+    //Win condition 
+    function winCon(){
+        var text = document.getElementById('game-text')
+        let rock = document.getElementById("r")
+        let scissor = document.getElementById("s")
+        let paper = document.getElementById("p")
+        if(yourScore === 6){
+            text.innerHTML = "You have Won!";
+            text.style.color = "green";
+            rock.style.display = "none";
+            paper.style.display = "none";
+            scissor.style.display = "none";
+
+        }else if(oppScore === 6){
+            text.innerHTML = "Your opponent has won!";
+            text.style.color = "red";
+            rock.style.display = "none";
+            paper.style.display = "none";
+            scissor.style.display = "none";
+        }
+    }
+    //Changes the Score
     function scoreChange(){
         yScore = document.getElementById("score")
         opScore = document.getElementById("oppScore")
         yScore.innerHTML = `Your Score: ${yourScore}`;
         opScore.innerHTML = `Enemy Score: ${oppScore}`;
     }
+    //How the ai functions
     function aiTurn() {
         turn = Math.floor(Math.random() * 3);
         if(turn === 0) {
@@ -22,6 +45,7 @@ function game(){
         }
     }
     
+    //The logic behind the game
     function gameLogic(){
         var image = document.getElementById('question')
         var text = document.getElementById('game-text')
@@ -83,6 +107,7 @@ function game(){
         }
         return yourScore;
     }
+    //The game start timer
     function timer(time, seconds){
         const timeH = document.querySelector(time);
         let timeSecond = seconds;
@@ -98,6 +123,7 @@ function game(){
                     aiTurn()
                     gameLogic()
                     scoreChange()
+                    winCon()
                     console.log(yourChoice)
                 }
                 let scissor = document.getElementById("s")
@@ -106,6 +132,7 @@ function game(){
                     aiTurn()
                     gameLogic()
                     scoreChange()
+                    winCon()
                     console.log(yourChoice)
                 }
                 let paper = document.getElementById("p")
@@ -114,12 +141,10 @@ function game(){
                     aiTurn()
                     gameLogic()
                     scoreChange()
+                    winCon()
                     console.log(yourChoice)
                 }
-                
             }
-    
-    
         },1000)
     }
     timer('h2', 5)
